@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* Header Start */
+.header {
+    background-color: rgb(35, 168, 101);
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    gap: 15px;
+}
+
+h2 {
+    color: white;
+    font-size: xx-large;
+    padding-top: 16px;
+}
+
+.btn {
+    padding-top: 1rem;
+}
+
+.login,
+.singup {
+    background-color: rgb(255, 139, 97);
+    width: 4.5rem;
+    height: 2.2rem;
+    color: rgb(4, 4, 4);
+    font-size: 17px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login:hover,
+.singup:hover {
+    color: rgb(254, 254, 254);
+    background-color: #2c3e50;
+    cursor: pointer;
+    border: 3px solid rgb(255, 139, 97);
+}
+
+/* Header End */
+
+/* Menu bar start */
+#menu {
+    padding: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+    /* border-radius: 10px; */
+}
+
+#menu ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    /* line-height: 40px; */
+    padding: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+#menu ul li {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li:hover {
+    background-color: #2c3e50;
+    border-radius: 7px;
+}
+
+#menu ul ul {
+    position: absolute;
+    background-color: #70e09f;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+#menu ul ul li {
+    float: none;
+    width: 150px;
+    border-left: 3px solid #70e09f;
+    border-radius: 7px;
+}
+
+#menu ul ul li:hover {
+    border-left: 3px solid #dc7a59;
+}
+
+#menu ul ul ul {
+    top: 0px;
+    left: 100px;
+}
+
+/* hover menu child combibater */
+#menu ul li:hover>ul {
+    display: block;
+}
+
+/* section start  */
+section {
+    /* background-color: #b8c574; */
+    margin: 1vh 5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionpart1 {
+    width: 600px;
+    height: 450px;
+    /* background-color: rgb(20, 200, 220); */
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.section1 {
+    margin: 2rem;
+    margin-top: 5rem;
+    padding: 20px;
+    color: #27ae60;
+}
+
+.section2 {
+    margin: 3.2rem;
+    margin-top: -2rem;
+    color: black;
+    font-size: 4vh;
+}
+
+span {
+    color: rgb(24, 155, 96);
+}
+
+.readmore {
+    background-color: rgb(255, 139, 97);
+    width: 140px;
+    height: 50px;
+    margin: 3.2rem;
+    margin-top: -2rem;
+    border: 3px solid lightgreen;
+}
+
+.readmore:hover {
+    color: rgb(254, 254, 254);
+    background-color: #2c3e50;
+    cursor: pointer;
+    border: 3px solid rgb(255, 139, 97);
+}
+
+.sectionpart2 {
+    width: 600px;
+    height: 450px;
+    /* background-color: rgb(20, 200, 220); */
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.templet {
+    width: 420px;
+    margin: 18px;
+    padding-left: 60px;
+}
+
+/* .templet:hover { */
+/* transition: 0.5s; */
+/* } */
+
+/* section End  */
+
+/* courses start */
+main {
+    /* background-color: #f0f6f2; */
+    margin: 3vh 6vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.html,
+.c,
+.python,
+.javascript,
+.css,
+.csharp {
+    height: 470px;
+    width: 350px;
+    background-color: rgb(168, 241, 205);
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.htmlimage {
+    width: 320px;
+    margin: 8px;
+    border: 5px solid black;
+    border-radius: 8px;
+    /* box-shadow: 50px; */
+    /* background-image: linear-gradient( black ,red, green, yellow, blue); */
+}
+
+.heading {
+    text-align: center;
+    color: black;
+}
+
+.htmlp {
+    /* width: 20px; */
+    height: 5rem;
+    margin: 14px;
+}
+
+.maintbtn {
+    margin: 12px;
+    padding: 2px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.Quiz,
+.Explore {
+    background-color: #27ae60;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 12px;
+}
+
+.Quiz:hover,
+.Explore:hover {
+    color: rgb(254, 254, 254);
+    background-color: #2c3e50;
+    cursor: pointer;
+    border: 3px solid rgb(255, 139, 97);
+}
+
+a {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+}
+
+
+/* courses End  */
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #343432;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center
+}
+h4{
+    color: white;
+    text-align: center;
+}
+
+/* .links { */
+    /* width: 340px; */
+    /* height: 150px; */
+    /* display: flex; */
+    /* background-color: #dc7a59; */
+    /* margin:2rem 14rem; */
+/*  */
+/* } */
+/* .logo-footer{ */
+    /* display: flex; */
+/* } */
+/* .logoicon { */
+    /* height: 60px; */
+    /* width: 60px; */
+    /* padding-left: 4rem; */
+/* background-color: #2c3e50; */
+/* } */
+/* .GGITC{ */
+    /* font-size: 1.7vh; */
+    /* padding-left: 7rem; */
+    /* margin: -1rem; */
+    /* left: 30px; */
+/* } */
+/* .contact{ */
+    /* width: 340px; */
+    /* height: 150px; */
+    /* list-style: none; */
+    /* background-color: #dc7a59; */
+    /* margin: 2rem 14rem; */
+/*      */
+/* } */
+/* .contact ul li { */
+    /* list-style: none; */
+/* } */
